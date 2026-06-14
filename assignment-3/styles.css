@@ -1,0 +1,230 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 40px 20px;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Page Title ===== */
+.page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+}
+
+/* ===== Cards Grid ===== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ===== Card Base ===== */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Accent Colors */
+.card-web::before { background: linear-gradient(90deg, #00d2ff, #3a7bd5); }
+.card-web:hover { border-color: rgba(0, 210, 255, 0.4); }
+
+.card-app::before { background: linear-gradient(90deg, #f7971e, #ffd200); }
+.card-app:hover { border-color: rgba(247, 151, 30, 0.4); }
+
+.card-python::before { background: linear-gradient(90deg, #11998e, #38ef7d); }
+.card-python:hover { border-color: rgba(56, 239, 125, 0.4); }
+
+.card-java::before { background: linear-gradient(90deg, #ee0979, #ff6a00); }
+.card-java:hover { border-color: rgba(238, 9, 121, 0.4); }
+
+/* ===== Card Icon ===== */
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ===== Card Title ===== */
+.card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.card-program {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ===== Card Details ===== */
+.card-details {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ===== Button ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-web {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+}
+
+.btn-app {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #333;
+}
+
+.btn-python {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #1a1a2e;
+}
+
+.btn-java {
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+}
