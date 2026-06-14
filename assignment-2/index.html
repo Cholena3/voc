@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card - Chocolate Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="recipe-card">
+        <!-- Recipe Title -->
+        <header class="recipe-header">
+            <h1 class="recipe-title">Chocolate Cake</h1>
+            <p class="recipe-subtitle">Rich, moist, and utterly delicious</p>
+        </header>
+
+        <!-- Recipe Image -->
+        <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop" 
+                 alt="Chocolate Cake" />
+        </div>
+
+        <!-- Info Bar: Prep Time & Servings -->
+        <div class="recipe-info">
+            <div class="info-item">
+                <span class="info-label">Prep Time</span>
+                <span class="info-value">20 min</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Cook Time</span>
+                <span class="info-value">35 min</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Total Time</span>
+                <span class="info-value">55 min</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Servings</span>
+                <span class="info-value">8</span>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-label">Cooking Progress</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">
+                    <span class="progress-text" id="progressText">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredients Section -->
+        <section class="recipe-section">
+            <div class="section-header" id="ingredientsToggle">
+                <h2>Ingredients</h2>
+                <button class="toggle-btn" aria-label="Toggle ingredients">Show</button>
+            </div>
+            <ul class="ingredients-list hidden" id="ingredientsList">
+                <li>2 cups all-purpose flour</li>
+                <li>2 cups sugar</li>
+                <li>3/4 cup unsweetened cocoa powder</li>
+                <li>2 teaspoons baking soda</li>
+                <li>1 teaspoon salt</li>
+                <li>2 eggs</li>
+                <li>1 cup buttermilk</li>
+                <li>1 cup hot water</li>
+                <li>1/2 cup vegetable oil</li>
+                <li>2 teaspoons vanilla extract</li>
+            </ul>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="recipe-section">
+            <div class="section-header" id="stepsToggle">
+                <h2>Instructions</h2>
+                <button class="toggle-btn" aria-label="Toggle instructions">Show</button>
+            </div>
+            <ol class="steps-list hidden" id="stepsList">
+                <li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
+                <li>In a large bowl, combine flour, sugar, cocoa, baking soda, and salt.</li>
+                <li>Add eggs, buttermilk, oil, and vanilla. Beat on medium speed for 2 minutes.</li>
+                <li>Stir in hot water (batter will be thin). Pour into prepared pans.</li>
+                <li>Bake for 30-35 minutes, or until a toothpick inserted in the center comes out clean.</li>
+                <li>Cool in pans for 10 minutes, then remove to wire racks to cool completely.</li>
+                <li>Frost with your favorite chocolate frosting and serve!</li>
+            </ol>
+        </section>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-primary" id="startCookingBtn">Start Cooking</button>
+            <button class="btn btn-secondary hidden" id="nextStepBtn">Next Step</button>
+            <button class="btn btn-reset hidden" id="resetBtn">Reset</button>
+        </div>
+
+        <!-- Timer (Bonus) -->
+        <div class="timer-container hidden" id="timerContainer">
+            <div class="timer-label">Cooking Timer</div>
+            <div class="timer-display" id="timerDisplay">55:00</div>
+            <div class="timer-buttons">
+                <button class="btn btn-small" id="pauseTimerBtn">Pause</button>
+                <button class="btn btn-small" id="resetTimerBtn">Reset Timer</button>
+            </div>
+        </div>
+
+        <!-- Print Button (Bonus) -->
+        <div class="print-section">
+            <button class="btn btn-print" onclick="window.print()">Print Recipe</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
