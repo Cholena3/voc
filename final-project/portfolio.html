@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Portfolio | Editkaro.in - Our Video Editing Work</title>
+    <meta name="description" content="Explore Editkaro.in's portfolio of video editing work: short-form, long-form, gaming videos, football edits, eCommerce ads, documentaries, color grading, anime, and ads.">
+    <meta name="keywords" content="video editing portfolio, gaming edits, anime AMV, eCommerce ads, color grading, football edits, documentary editing">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Editkaro.in Portfolio">
+    <meta property="og:description" content="Browse our creative video work across 9 categories.">
+
+    <link rel="canonical" href="https://editkaro.in/portfolio.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edit<span>karo</span>.in</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Our <span class="gradient-text">Portfolio</span></h1>
+        <p>Browse our creative work across every category. Click any project to view details.</p>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="section" style="padding-top:20px;">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filters" id="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="short-form">Short-Form</button>
+                <button class="filter-btn" data-filter="long-form">Long-Form</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="football">Football Edits</button>
+                <button class="filter-btn" data-filter="ecommerce">eCommerce Ads</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="color-grading">Color Grading</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="ads">Ads</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-thumb" id="lightboxThumb"></div>
+            <div class="lightbox-info">
+                <span class="lightbox-category" id="lightboxCategory"></span>
+                <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                <p class="lightbox-desc" id="lightboxDesc"></p>
+                <a href="#" target="_blank" class="cta-btn" id="lightboxLink">Watch Video</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">Edit<span>karo</span>.in</div>
+                <p style="margin-top:15px;">Crafting scroll-stopping video content and social media campaigns for brands and creators worldwide.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="portfolio.html">Short-Form Videos</a></li>
+                    <li><a href="portfolio.html">Gaming Edits</a></li>
+                    <li><a href="portfolio.html">Anime Videos</a></li>
+                    <li><a href="portfolio.html">Documentaries</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Editkaro.in. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
