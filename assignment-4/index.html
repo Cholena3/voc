@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Edit<span>karo</span>.in</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">We Turn Ideas Into <span class="gradient-text">Visual Stories</span></h1>
+            <p class="hero-subtitle">Social media marketing & video editing agency crafting scroll-stopping content that converts.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-plus">M+</span>
+                    <span class="stat-label">Views</span>
+                </div>
+            </div>
+            <a href="#work" class="cta-btn">Explore Our Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Portfolio Work Section -->
+    <section class="work-section" id="work">
+        <div class="section-head">
+            <h2 class="section-title">Our <span class="gradient-text">Portfolio</span></h2>
+            <p class="section-desc">Browse our creative work across multiple categories</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="short-form">Short-Form</button>
+            <button class="filter-btn" data-filter="long-form">Long-Form</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="football">Football Edits</button>
+            <button class="filter-btn" data-filter="ecommerce">eCommerce Ads</button>
+            <button class="filter-btn" data-filter="documentary">Documentary</button>
+            <button class="filter-btn" data-filter="color-grading">Color Grading</button>
+            <button class="filter-btn" data-filter="anime">Anime</button>
+            <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Items injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2 class="section-title">Why <span class="gradient-text">Editkaro.in</span>?</h2>
+            <p>We're a passionate team of editors and marketers who live and breathe content. From snappy short-form reels to cinematic documentaries, we craft videos that grab attention and drive results.</p>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quality edits delivered on time, every time.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Cinematic Quality</h3>
+                    <p>Professional-grade editing and color grading.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>Growth Focused</h3>
+                    <p>Content designed to boost engagement & reach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Let's Create <span class="gradient-text">Together</span></h2>
+        <p>Ready to take your content to the next level?</p>
+        <a href="https://www.editkaro.in" target="_blank" class="cta-btn">Get In Touch</a>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-thumb" id="lightboxThumb"></div>
+            <div class="lightbox-info">
+                <span class="lightbox-category" id="lightboxCategory"></span>
+                <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                <p class="lightbox-desc" id="lightboxDesc"></p>
+                <a href="#" target="_blank" class="cta-btn" id="lightboxLink">Watch Video</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
