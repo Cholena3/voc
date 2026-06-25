@@ -4,8 +4,12 @@ A fully responsive, multi-page website for **Editkaro.in**, a social media marke
 
 ## 🔗 Live Demo
 
-Deploy with GitHub Pages / Netlify / Vercel and add the link here:
-`https://<your-deployment-url>`
+**Live site:** [https://cholena3.github.io/voc/final-project/](https://cholena3.github.io/voc/final-project/)
+
+- Home: https://cholena3.github.io/voc/final-project/
+- Portfolio: https://cholena3.github.io/voc/final-project/portfolio.html
+- About Us: https://cholena3.github.io/voc/final-project/about.html
+- Contact: https://cholena3.github.io/voc/final-project/contact.html
 
 ## 📁 Project Structure
 
