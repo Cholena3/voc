@@ -11,7 +11,7 @@
       the forms remain functional for testing/demo.
    =================================================== */
 
-const GOOGLE_SCRIPT_URL = ''; // <-- Paste your Google Apps Script Web App URL here
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxp1w93jrgOIv-nW3avqhaPU2BOxj-8XUdaft8QVOGtWa-gtGYybPMlG6hpHtYFpOowNg/exec';
 
 // Helper: show a message under a form
 function showMessage(el, text, type) {
