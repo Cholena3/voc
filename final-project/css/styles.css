@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--ink);
     overflow-x: hidden;
@@ -36,10 +36,10 @@ a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
 .display {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.02em;
-    line-height: 0.98;
+    line-height: 1.08;
 }
 
 .container {
@@ -58,9 +58,9 @@ img { max-width: 100%; display: block; }
     color: var(--bg);
     border: 2px solid var(--ink);
     border-radius: 4px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 5px 5px 0 var(--accent);
@@ -104,8 +104,8 @@ img { max-width: 100%; display: block; }
 }
 
 .logo {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -1px;
 }
@@ -165,9 +165,9 @@ img { max-width: 100%; display: block; }
 .marquee-track {
     display: inline-block;
     animation: scrollX 22s linear infinite;
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -206,9 +206,9 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-title {
-    font-size: clamp(2.8rem, 9vw, 7rem);
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
     margin-bottom: 25px;
-    max-width: 14ch;
+    max-width: 16ch;
 }
 
 .hero-title em {
@@ -250,8 +250,8 @@ img { max-width: 100%; display: block; }
 .stat:last-child { border-right: none; }
 
 .stat-number, .stat-plus {
-    font-family: 'Syne', sans-serif;
-    font-size: 3rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.2rem;
     font-weight: 800;
     display: inline;
     color: var(--accent-2);
@@ -274,7 +274,7 @@ img { max-width: 100%; display: block; }
 }
 
 .page-header h1 {
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
     margin-bottom: 18px;
 }
 
@@ -305,7 +305,7 @@ img { max-width: 100%; display: block; }
 }
 
 .section-title {
-    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-size: clamp(1.7rem, 3.5vw, 2.4rem);
     margin-bottom: 14px;
 }
 
@@ -343,8 +343,8 @@ img { max-width: 100%; display: block; }
 }
 
 .service-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -368,8 +368,8 @@ img { max-width: 100%; display: block; }
     border: 2px solid var(--line);
     border-radius: 50px;
     cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
     font-weight: 600;
     transition: all 0.2s ease;
 }
@@ -478,8 +478,8 @@ img { max-width: 100%; display: block; }
 }
 
 .portfolio-item .item-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.15rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #fff;
 }
@@ -546,8 +546,8 @@ img { max-width: 100%; display: block; }
 }
 
 .lightbox-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.9rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
@@ -621,7 +621,7 @@ img { max-width: 100%; display: block; }
     border: 2px solid var(--bg);
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
 
@@ -682,8 +682,8 @@ img { max-width: 100%; display: block; }
 }
 
 .team-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.15rem;
     margin-bottom: 4px;
 }
 
@@ -720,8 +720,8 @@ img { max-width: 100%; display: block; }
 .mv-card:nth-child(2) { box-shadow: 6px 6px 0 var(--accent-2); }
 
 .mv-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
@@ -738,8 +738,8 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-info h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 2rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.7rem;
     margin-bottom: 20px;
 }
 
@@ -795,7 +795,7 @@ img { max-width: 100%; display: block; }
     border: 2px solid var(--line);
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
 }
 
@@ -829,8 +829,8 @@ img { max-width: 100%; display: block; }
 .footer-col .logo span { color: var(--accent); }
 
 .footer-col h4 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.05rem;
     margin-bottom: 18px;
 }
 
